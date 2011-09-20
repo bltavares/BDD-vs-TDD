@@ -1,6 +1,7 @@
-require "minitest/autorun"
+require "minitest/unit"
 require "bundler/setup"
 require "bdd_vs_tdd"
+require "turn"
 
 class CalculatorTest < MiniTest::Unit::TestCase
 
