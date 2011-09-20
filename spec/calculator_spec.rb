@@ -26,5 +26,4 @@ describe BddVsTdd::Calculator do
       subject.multiply(-1,2).should be == -2
     end
   end
-
 end
