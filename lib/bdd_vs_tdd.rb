@@ -1,5 +1,11 @@
 require "bdd_vs_tdd/version"
 
 module BddVsTdd
-  # Your code goes here...
+  class Calculator
+
+    def add(n1,n2)
+      n1 + n2
+    end
+
+  end
 end
