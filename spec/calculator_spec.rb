@@ -17,4 +17,14 @@ describe BddVsTdd::Calculator do
     end
   end
 
+  describe "#multiply" do
+    it "should multiply correctely positive numbers" do
+      subject.multiply(1,2).should be == 2
+    end
+
+    it "should multiply correctely negative numbers" do
+      subject.multiply(-1,2).should be == -2
+    end
+  end
+
 end
