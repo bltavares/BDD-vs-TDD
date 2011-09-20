@@ -26,4 +26,18 @@ describe BddVsTdd::Calculator do
       subject.multiply(-1,2).should be == -2
     end
   end
+
+  describe "#divide" do
+    it "should divide correctely positive numbers" do
+      subject.divide(1,2).should be == 0.5
+    end
+
+    it "should divide correctely negative numbers" do
+      subject.divide(-1,2).should be == -0.5
+    end
+
+    it "should raise an exception when dividing by 0" do
+      expect { subject.divide(1,0) }.should raise_error ZeroDivisionError
+    end
+  end
 end
