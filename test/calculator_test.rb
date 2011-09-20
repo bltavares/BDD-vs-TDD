@@ -15,4 +15,12 @@ class CalculatorTest < MiniTest::Unit::TestCase
   def test_sum_of_negative_numbers_are_ok
     assert @calculator.add(1, -1), 0
   end
+
+  def test_subtract_negative_numbers_are_ok
+    assert @calculator.subtract(-1,-1), 0 
+  end
+
+  def test_subtract_positive_numbers_are_ok
+    assert @calculator.subtract(1,1), 0
+  end
 end
