@@ -23,4 +23,13 @@ class CalculatorTest < MiniTest::Unit::TestCase
   def test_subtract_positive_numbers_are_ok
     assert @calculator.subtract(1,1), 0
   end
+
+  def test_multiplication_of_positive_numbers_are_ok
+    assert @calculator.multiply(1, 2), 2
+  end
+  
+  def test_multiplication_of_negative_numbers_are_ok
+    assert @calculator.multiply(-1, 2), -2
+  end
+
 end
